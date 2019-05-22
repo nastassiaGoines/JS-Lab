@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+		var a, b, result;
+		function setValues() {
+			a = Number(document.getElementById('a').value); 
+			b = Number(document.getElementById('b').value);
+		}
+
+		function sum() {
+			setValues();
+			result = a + b;
+			alert("The result is " + result);
+		}
+
+		function sub() {
+			setValues();
+			result = a - b;
+			alert("The result is " + result);
+		}
+
+		function mult() {
+			setValues();
+			result = a * b;
+			alert("The result is " + result);
+		}
+
+		function div() {
+			setValues();
+			result = a/b;
+			alert("The result is " + result);
+		}
+
+
+	</script>
+</head>
+<body>
+	<input id = 'a' type = 'text'/>
+	<input id = 'b' type = 'text'/>
+	<input type  = 'button' click = 'sum()' value = 'add'/>
+	<input type  = 'button' click = 'sub()' value = 'subtract'/>
+	<input type  = 'button' click = 'mult()' value = 'multiply'/>
+	<input type  = 'button' click = 'div()' value = 'divide'/>
+
+
+</body>
+</html>
